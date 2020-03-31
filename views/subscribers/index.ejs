@@ -1,0 +1,33 @@
+<h2>Users Tabel</h2>
+<table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Email</th>
+      <th>Zip Code</th>
+      <th>Vip</th>
+
+    </tr>
+  </thead >
+  <tbody>
+    <% subscribers.forEach(user => { %>
+    <tr>
+      <td>
+        <%= user.fullname %>
+      </td>
+      <td>
+        <%= user.email %>
+
+      </td>
+      <td>
+        <%= user.zipCode %>
+      </td>
+      <td>
+        <%= user.vip %>
+      </td>
+
+
+    </tr>
+    <% }); %>
+  </tbody>
+</table >
